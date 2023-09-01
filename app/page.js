@@ -8,9 +8,9 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <div className={styles.input}>
-          <input type="text" placeholder="Add a new task" />
-          <button>Add</button>
+        <div className={styles.input__container}>
+          <input className={styles.input} type="text" placeholder="Add a new task" />
+          <button className={styles.addbtn}>Add</button>
         </div>
 
         <div className={styles.task__container}>

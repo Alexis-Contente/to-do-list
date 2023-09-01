@@ -15,7 +15,55 @@
 }
 
 .main {
-  border: 1px solid #2696ff;
-  width: 50%;
+  width: 500px;
   margin: 150px auto;
+}
+
+.input__container {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  border: 10px solid #2696ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.input {
+  width: 80%;
+  height: 50px;
+  margin: 10px 0 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.addbtn {
+  width: 20%;
+  margin: 10px 10px 10px 0;
+}
+
+.task__container {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #2696ff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.task__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  margin: 0 20px 0 0;
 }
