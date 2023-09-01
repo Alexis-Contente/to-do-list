@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "./page.module.css";
+import styles from "../../page.module.css";
 
-function Header() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>My to do list</h1>

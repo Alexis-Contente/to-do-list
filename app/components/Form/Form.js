@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "./page.module.css";
+import styles from "../../page.module.css";
 
-function Form(props) {
+export default function Form(props) {
   return (
     <form onSubmit={props.addTask}>
       <div className={styles.input__container}>

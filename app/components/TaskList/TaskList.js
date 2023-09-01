@@ -1,8 +1,8 @@
 "use client";
 
-import styles from "./page.module.css";
+import styles from "../../page.module.css";
 
-function TaskList(props) {
+export default function TaskList(props) {
   return (
     <div className={styles.task__container}>
       <ul className={styles.task__list}>
