@@ -1,35 +1,40 @@
-import styles from './page.module.css'
+import styles from "./page.module.css";
+import Header from "../components/header";
+import Form from "../components/form";
+import TaskList from "../components/taskList";
+import { useState } from "react";
 
 export default function Home() {
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState("");
+
+  const addTask = (e) => {
+    e.preventDefault();
+    if (newTask.trim() !== "") {
+      setTasks([...tasks, newTask]);
+      setNewTask("");
+    }
+  };
+
+  const deleteTask = (index) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+  };
+
   return (
     <>
-      <header className={styles.header}>
-        <h1 className={styles.title}>My to do list</h1>
-      </header>
+      <Header></Header>
 
       <main className={styles.main}>
-        <div className={styles.input__container}>
-          <input className={styles.input} type="text" placeholder="Add a new task" />
-          <button className={styles.addbtn}>Add</button>
-        </div>
+        <Form
+          newTask={newTask}
+          setNewTask={setNewTask}
+          addTask={addTask}
+        ></Form>
 
-        <div className={styles.task__container}>
-          <ul className={styles.task__list}>
-            <li className={styles.task}>
-              <p className={styles.item}>Task</p>
-              <button className={styles.delete}>X</button>
-            </li>
-            <li className={styles.task}>
-            <p className={styles.item}>Task</p>
-              <button className={styles.delete}>X</button>
-            </li>
-            <li className={styles.task}>
-            <p className={styles.item}>Task</p>
-              <button className={styles.delete}>X</button>
-            </li>
-          </ul>
-        </div>
+        <TaskList tasks={tasks} deleteTask={deleteTask}></TaskList>
       </main>
     </>
-  )
+  );
 }
