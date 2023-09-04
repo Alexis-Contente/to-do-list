@@ -34,11 +34,13 @@
   margin: 10px 0 10px 10px;
   padding: 10px;
   border-radius: 5px;
+  font-size: 25px;
 }
 
 .addbtn {
   width: 20%;
   margin: 10px 10px 10px 0;
+  font-size: 25px;
 }
 
 .task__container {

@@ -24,6 +24,9 @@ export default function Home() {
     setTasks(updatedTasks);
   };
 
+  const taskCount = tasks.length;
+  console.log(taskCount);
+
   return (
     <>
       <Header></Header>
