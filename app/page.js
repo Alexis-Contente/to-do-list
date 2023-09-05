@@ -38,7 +38,11 @@ export default function Home() {
           addTask={addTask}
         ></Form>
 
-        <TaskList tasks={tasks} deleteTask={deleteTask}></TaskList>
+        <TaskList
+          tasks={tasks}
+          deleteTask={deleteTask}
+          taskCount={taskCount}
+        ></TaskList>
       </main>
     </>
   );

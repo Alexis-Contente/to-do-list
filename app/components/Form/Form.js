@@ -9,7 +9,7 @@ export default function Form(props) {
         <input
           className={styles.input}
           type="text"
-          placeholder="Add a new task"
+          placeholder="Add new task"
           value={props.newTask}
           onChange={(e) => props.setNewTask(e.target.value)}
         />
