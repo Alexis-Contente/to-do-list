@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 To Do List
 
-## Getting Started
+## 📍 Description
 
-First, run the development server:
+This to-do list application is designed to help you organize your daily life in a simple and intuitive way. With its streamlined and easy-to-use interface, you can quickly add and remove tasks as you complete them. Whether it's managing household chores, professional projects, or personal plans, this application is your ideal companion for staying organized and efficient.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## ⚡️ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Adding a task
+- Deleting a task
+- Task count counter
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next 13.4.19, JavaScript & CSS
