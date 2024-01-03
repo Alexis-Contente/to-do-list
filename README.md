@@ -13,3 +13,29 @@ This to-do list application is designed to help you organize your daily life in 
 ## 🛠 Tech Stack
 
 Next 13.4.19, JavaScript & CSS
+
+## 🚀 Run Locally
+
+**Clone the project**
+
+```bash
+  git clone git@github.com:Alexis-Contente/to-do-list.git
+```
+
+**Go to the project directory**
+
+```bash
+  cd "project-clone"
+```
+
+**Install dependencies**
+
+```bash
+  npm install
+```
+
+**Start the server**
+
+```bash
+  npm run dev
+```
